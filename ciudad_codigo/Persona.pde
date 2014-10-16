@@ -7,14 +7,14 @@
 class Persona{
   //Configuración de personas
   //Vida máxima en años
-  float diametroInicial=2;
-  float diametroFinal=20;
+  float diametroInicial=1;
+  float diametroFinal=100;
 
   Body body; //Box2D body
   Vec2 pos; //Posición
   float diametro;
   float edad;
-  float edadMaxima = 500;
+  float edadMaxima = 100;
 
   //Color de la persona, que se calculará al iniciar la persona
   float tonoPersona;

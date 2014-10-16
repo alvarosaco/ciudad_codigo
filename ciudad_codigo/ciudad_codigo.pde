@@ -13,12 +13,12 @@ import org.jbox2d.dynamics.*;
 // CASAS
 // Primero se generará una casa por barrio. Después se añadirán casas adosadas con el mismo ángulo.
 int numeroMaximoCasas=120; //Numero de casas que se crearán
-int numeroMaximoDeBarrios = 7; //Número de casas que se creará al inicio de forma aleatoria e independiente
+int numeroMaximoDeBarrios = 10; //Número de casas que se creará al inicio de forma aleatoria e independiente
 float distaciaMinimaSeparacionCasasBarrio = 44.0; //Distancia mínima de separación para el resto de las casas
 float distaciaMaximaSeparacionCasasBarrio = 50.0; //Distancia maxima de separación para el resto de las casas
 
 // PERSONAS
-int numeroMaximoPersonas=160; //Numero de personas que se crearán. Las que se mueran, volverán a nacer
+int numeroMaximoPersonas=300; //Numero de personas que se crearán. Las que se mueran, volverán a nacer
 
 // Bordes
 int anchoBordeMarco=30;  //Separación entre el borde de la aplicación y la generación de contenidos. Las casas pueden sobresalir.
