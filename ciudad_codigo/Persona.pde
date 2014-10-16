@@ -7,14 +7,14 @@
 class Persona{
   //Configuración de personas
   //Vida máxima en años
-  float diametroInicial=1;
+  float diametroInicial=0;
   float diametroFinal=10;
 
   Body body; //Box2D body
   Vec2 pos; //Posición
   float diametro;
   float edad;
-  float edadMaxima = 100;
+  float edadMaxima = 90;
 
   //Color de la persona, que se calculará al iniciar la persona
   float tonoPersona;
@@ -36,10 +36,10 @@ class Persona{
       saturacionPersona = 0;
       brilloPersona = 180;
     } else {
-      tonoPersona = random(colorLocal.x-3-(contraste*0.2),colorLocal.x+3+contraste*0.2);
+      tonoPersona = random(colorLocal.x-50-(contraste*0.2),colorLocal.x+50+contraste*0.2);
       saturacionPersona = random(colorLocal.y-1-(contraste*0.1), colorLocal.y+1+(contraste*0.1));
       //Tomamos el contraste de la nubosidad del momento
-      brilloPersona = random(colorLocal.z-3-(contraste*0.2), colorLocal.z+3+contraste*0.2);
+      brilloPersona = random(colorLocal.z-100-(contraste*0.2), colorLocal.z+100+contraste*0.2);
     }
   }
    void draw(){
