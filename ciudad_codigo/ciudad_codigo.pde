@@ -18,15 +18,15 @@ float distaciaMinimaSeparacionCasasBarrio = 44.0; //Distancia mínima de separac
 float distaciaMaximaSeparacionCasasBarrio = 50.0; //Distancia maxima de separación para el resto de las casas
 
 // PERSONAS
-int numeroMaximoPersonas=300; //Numero de personas que se crearán. Las que se mueran, volverán a nacer
+int numeroMaximoPersonas=10000; //Numero de personas que se crearán. Las que se mueran, volverán a nacer
 
 // Bordes
 int anchoBordeMarco=30;  //Separación entre el borde de la aplicación y la generación de contenidos. Las casas pueden sobresalir.
 
 //Datos GPS, que nos servirán para obtener los colores de los elementos.
-//Datos GPS de Córdoba
-float gpsLongitud = -4.7666;
-float gpsLatitud = 37.8833;
+//Datos GPS de Reykjavik
+float gpsLongitud = 64.10120818;
+float gpsLatitud = -21.690111270;
 //Color calculado a traves de estos datos GPS
 PVector colorLocal = new PVector(180.0+gpsLongitud, 180.0-(90.0+gpsLatitud), (90.0+gpsLatitud));
 float contraste; //Tomaremos las nubes en ese momento para dar más o menos contraste. Varíará de 0 a 100

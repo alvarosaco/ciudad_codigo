@@ -8,7 +8,7 @@ class Persona{
   //Configuración de personas
   //Vida máxima en años
   float diametroInicial=1;
-  float diametroFinal=100;
+  float diametroFinal=10;
 
   Body body; //Box2D body
   Vec2 pos; //Posición
