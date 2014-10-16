@@ -8,7 +8,7 @@ class Persona{
   //Configuración de personas
   //Vida máxima en años
   float diametroInicial=0;
-  float diametroFinal=10;
+  float diametroFinal=20;
 
   Body body; //Box2D body
   Vec2 pos; //Posición
@@ -36,10 +36,10 @@ class Persona{
       saturacionPersona = 0;
       brilloPersona = 180;
     } else {
-      tonoPersona = random(colorLocal.x-50-(contraste*0.2),colorLocal.x+50+contraste*0.2);
+      tonoPersona = random(colorLocal.x-30-(contraste*0.2),colorLocal.x+20+contraste*0.2);
       saturacionPersona = random(colorLocal.y-1-(contraste*0.1), colorLocal.y+1+(contraste*0.1));
       //Tomamos el contraste de la nubosidad del momento
-      brilloPersona = random(colorLocal.z-100-(contraste*0.2), colorLocal.z+100+contraste*0.2);
+      brilloPersona = random(colorLocal.z-30-(contraste*0.2), colorLocal.z+30+contraste*0.2);
     }
   }
    void draw(){
@@ -88,12 +88,12 @@ class Persona{
     // Parameters that affect physics
     fd.density = 0.1;
     fd.friction = 0.00;
-    fd.restitution = 0.1;
+    fd.restitution = 0.5;
 
     // Attach fixture to body
     body.createFixture(fd);
 
-    body.setAngularVelocity(random(-10, 10));
+    body.setAngularVelocity(random(-100, 100));
   }
   
   //Esta función hacer reiniciar a la persona.
